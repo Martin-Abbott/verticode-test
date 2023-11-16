@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="bg-light-green flex h-24">
-      <img src={logo} className="m-auto h-16" />
+      <img src={logo} alt="Verticode logo" className="m-auto h-16" />
     </div>
   );
 }
