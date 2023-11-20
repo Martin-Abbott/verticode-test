@@ -33,7 +33,7 @@ const Form: React.FC<IFormProps> = ({
 		setShowForm(false);
 	};
 
-	const handleReset = () => {
+	const handleClear = () => {
 		setInputs(initialState);
 	};
 
@@ -156,8 +156,8 @@ const Form: React.FC<IFormProps> = ({
 				/>
 				<input
 					type="reset"
-					value="Reset"
-					onClick={handleReset}
+					value="Clear"
+					onClick={handleClear}
 					className="m-auto bg-red-400 hover:scale-125 duration-300 text-black font-bold py-2 px-6 rounded focus:shadow-outline"
 				/>
 			</section>
