@@ -40,10 +40,12 @@ const Form: React.FC<IFormProps> = ({
 	return (
 		<form
 			onSubmit={handleSubmit}
-			className="flex flex-wrap flex-grow justify-evenly p-2 text-black border  border-light-green-500 rounded-2xl w-[85vw] max-w-[600px] self-center my-2 mx-auto"
+			className="flex flex-wrap flex-grow justify-evenly p-2 text-green-700 font-manrope border  border-light-green-500 rounded-2xl w-[85vw] max-w-[600px] self-center my-2 mx-auto"
 		>
 			<section className="p-2 w-full group">
-				<label htmlFor="firstName">First Name:</label>
+				<label className="font-bold" htmlFor="firstName">
+					First Name:
+				</label>
 				<input
 					type="text"
 					id="firstName"
@@ -51,11 +53,13 @@ const Form: React.FC<IFormProps> = ({
 					placeholder="First name"
 					onChange={handleChange}
 					required
-					className="p-2 m-auto w-full border rounded-lg group-hover:border group-hover:border-light-green-800"
+					className="p-2 m-auto w-full border rounded-lg group-hover:border-light-green-800"
 				/>
 			</section>
 			<section className="p-2 w-full group">
-				<label htmlFor="lastName">Last Name:</label>
+				<label className="font-bold" htmlFor="lastName">
+					Last Name:
+				</label>
 				<input
 					type="text"
 					id="lastName"
@@ -67,7 +71,9 @@ const Form: React.FC<IFormProps> = ({
 				/>
 			</section>
 			<section className="p-2 w-full group">
-				<label htmlFor="dateOfBirth">Date of Birth:</label>
+				<label className="font-bold" htmlFor="dateOfBirth">
+					Date of Birth:
+				</label>
 				<input
 					type="date"
 					id="dateOfBirth"
@@ -78,7 +84,9 @@ const Form: React.FC<IFormProps> = ({
 				/>
 			</section>
 			<section className="p-2 w-full group">
-				<label htmlFor="job">Job:</label>
+				<label className="font-bold" htmlFor="job">
+					Job:
+				</label>
 				<input
 					type="text"
 					id="job"
@@ -90,18 +98,22 @@ const Form: React.FC<IFormProps> = ({
 				/>
 			</section>
 			<section className="p-2 w-full flex-grow group">
-				<label htmlFor="bio">Bio:</label>
+				<label className="font-bold" htmlFor="bio">
+					Bio:
+				</label>
 				<textarea
 					name="bio"
 					id="bio"
 					placeholder="Bio"
 					onChange={handleChange}
 					required
-					className="p-2 border w-full h-4/5 rounded-lg group-hover:border-light-green-800"
+					className="p-2 m-auto w-full border rounded-lg h-4/5 group-hover:border-light-green-800"
 				/>
 			</section>
 			<section className="p-2 w-full group">
-				<label htmlFor="city">City:</label>
+				<label className="font-bold" htmlFor="city">
+					City:
+				</label>
 				<input
 					type="text"
 					id="city"
@@ -113,7 +125,9 @@ const Form: React.FC<IFormProps> = ({
 				/>
 			</section>
 			<section className="p-2 w-full group">
-				<label htmlFor="country">Country:</label>
+				<label className="font-bold" htmlFor="country">
+					Country:
+				</label>
 				<input
 					type="text"
 					id="country"
@@ -125,7 +139,9 @@ const Form: React.FC<IFormProps> = ({
 				/>
 			</section>
 			<section className="p-2 w-full group">
-				<label htmlFor="lat">Latitude:</label>
+				<label className="font-bold" htmlFor="lat">
+					Latitude:
+				</label>
 				<input
 					type="text"
 					id="lat"
@@ -137,7 +153,9 @@ const Form: React.FC<IFormProps> = ({
 				/>
 			</section>
 			<section className="p-2 w-full group">
-				<label htmlFor="long">Longitude:</label>
+				<label className="font-bold" htmlFor="long">
+					Longitude:
+				</label>
 				<input
 					type="text"
 					id="long"

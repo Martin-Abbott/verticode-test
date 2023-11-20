@@ -6,7 +6,7 @@ const PersonCard: React.FC<IFormProps> = ({ setShowForm, inputs }) => {
 	};
 
 	return (
-		<section className="flex flex-wrap flex-grow justify-evenly p-2 text-black border  border-light-green-500 rounded-2xl w-[85vw] max-w-[600px] self-center text-center my-2 mx-auto">
+		<section className="flex flex-wrap flex-grow justify-evenly p-2 text-green-700 font-manrope border  border-light-green-500 rounded-2xl w-[85vw] max-w-[600px] self-center text-center my-2 mx-auto">
 			<p className="p-2 m-2 w-full border rounded-lg hover:border-light-green-800">
 				<strong>First Name: </strong>
 				{inputs.firstName}
