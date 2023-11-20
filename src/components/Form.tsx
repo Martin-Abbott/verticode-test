@@ -1,7 +1,9 @@
 import IFormProps from "../models/FormProps";
+import submit from "../utils/submit";
 
 const Form: React.FC<IFormProps> = ({
 	setShowForm,
+	inputs,
 	setInputs,
 	initialState,
 }) => {
@@ -27,6 +29,7 @@ const Form: React.FC<IFormProps> = ({
 
 	const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
+		setInputs(submit(inputs));
 		setShowForm(false);
 	};
 
