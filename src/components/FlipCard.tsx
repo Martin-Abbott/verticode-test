@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Form from "./Form";
+import FormHeading from "./FormHeading";
 import PersonCard from "./PersonCard";
-// import IFormProps from "../models/FormProps";
+import PersonHeading from "./PersonHeading";
 import IPerson from "../models/Person";
 
 const FlipCard = () => {
@@ -25,21 +26,27 @@ const FlipCard = () => {
 	const [inputs, setInputs] = useState<IPerson>(initialState);
 
 	return showForm ? (
-		<Form
-			showForm={showForm}
-			setShowForm={setShowForm}
-			inputs={inputs}
-			setInputs={setInputs}
-			initialState={initialState}
-		/>
+		<>
+			<FormHeading />
+			<Form
+				showForm={showForm}
+				setShowForm={setShowForm}
+				inputs={inputs}
+				setInputs={setInputs}
+				initialState={initialState}
+			/>
+		</>
 	) : (
-		<PersonCard
-			showForm={showForm}
-			setShowForm={setShowForm}
-			inputs={inputs}
-			setInputs={setInputs}
-			initialState={initialState}
-		/>
+		<>
+			<PersonHeading />
+			<PersonCard
+				showForm={showForm}
+				setShowForm={setShowForm}
+				inputs={inputs}
+				setInputs={setInputs}
+				initialState={initialState}
+			/>
+		</>
 	);
 };
 
