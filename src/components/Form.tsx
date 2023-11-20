@@ -122,24 +122,24 @@ const Form: React.FC<IFormProps> = ({
 				/>
 			</section>
 			<section className="p-2 w-full group">
-				<label htmlFor="long">Longitude:</label>
-				<input
-					type="text"
-					id="long"
-					name="long"
-					placeholder="Longitude"
-					onChange={handleNestedChange}
-					required
-					className="p-2 m-auto w-full border rounded-lg group-hover:border group-hover:border-light-green-800"
-				/>
-			</section>
-			<section className="p-2 w-full group">
 				<label htmlFor="lat">Latitude:</label>
 				<input
 					type="text"
 					id="lat"
 					name="lat"
 					placeholder="Latitude"
+					onChange={handleNestedChange}
+					required
+					className="p-2 m-auto w-full border rounded-lg group-hover:border group-hover:border-light-green-800"
+				/>
+			</section>
+			<section className="p-2 w-full group">
+				<label htmlFor="long">Longitude:</label>
+				<input
+					type="text"
+					id="long"
+					name="long"
+					placeholder="Longitude"
 					onChange={handleNestedChange}
 					required
 					className="p-2 m-auto w-full border rounded-lg group-hover:border group-hover:border-light-green-800"

@@ -2,7 +2,7 @@ export default interface IPerson {
 	firstName: string;
 	lastName: string;
 	dateOfBirth: Date;
-	job: string | "Firefighter" | "Police Officer" | "Astronaut" | "Developer";
+	job: string;
 	bio: string;
 	location: ILocation;
 
