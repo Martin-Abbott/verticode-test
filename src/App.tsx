@@ -1,6 +1,6 @@
 import IPerson from "./models/Person";
 import Header from "./components/Header";
-import Form from "./components/Form";
+import FlipCard from "./components/FlipCard";
 function App() {
 	const submit = (person: IPerson) => {
 		//Mock estimatedScore calcuation
@@ -12,7 +12,7 @@ function App() {
 	return (
 		<>
 			<Header />
-			<Form />
+			<FlipCard />
 		</>
 	);
 }

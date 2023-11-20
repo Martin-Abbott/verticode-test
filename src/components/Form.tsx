@@ -1,24 +1,10 @@
-import { useState } from "react";
-import IPerson from "../models/Person";
+import IFormProps from "../models/FormProps";
 
-const Form = () => {
-	const initialState = {
-		firstName: "",
-		lastName: "",
-		dateOfBirth: new Date(1000, 0, 1),
-		job: "",
-		bio: "",
-		location: {
-			city: "",
-			country: "",
-			long: "",
-			lat: "",
-		},
-		estimatedScore: 0,
-	};
-
-	const [inputs, setInputs] = useState<IPerson>(initialState);
-
+const Form: React.FC<IFormProps> = ({
+	setShowForm,
+	setInputs,
+	initialState,
+}) => {
 	const handleChange = (
 		event:
 			| React.ChangeEvent<HTMLInputElement>
@@ -41,7 +27,7 @@ const Form = () => {
 
 	const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
-		alert(JSON.stringify(inputs, null, 4));
+		setShowForm(false);
 	};
 
 	const handleReset = () => {
